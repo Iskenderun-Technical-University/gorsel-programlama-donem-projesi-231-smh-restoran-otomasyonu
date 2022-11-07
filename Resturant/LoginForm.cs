@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Resturant
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
