@@ -71,6 +71,7 @@
             this.guna2CustomCheckBox1.UncheckedState.BorderRadius = 2;
             this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 0;
             this.guna2CustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomCheckBox1.Click += new System.EventHandler(this.guna2CustomCheckBox1_Click);
             // 
             // panel1
             // 
@@ -95,6 +96,7 @@
             this.button1.Size = new System.Drawing.Size(48, 37);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -138,10 +140,11 @@
             this.SignUpLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.SignUpLink.Location = new System.Drawing.Point(177, 286);
             this.SignUpLink.Name = "SignUpLink";
-            this.SignUpLink.Size = new System.Drawing.Size(147, 13);
+            this.SignUpLink.Size = new System.Drawing.Size(149, 13);
             this.SignUpLink.TabIndex = 34;
             this.SignUpLink.TabStop = true;
             this.SignUpLink.Text = "Click Here To Create Account";
+            this.SignUpLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SignUpLink_LinkClicked);
             // 
             // label25
             // 
@@ -225,6 +228,7 @@
             this.guna2GradientButton1.Size = new System.Drawing.Size(100, 43);
             this.guna2GradientButton1.TabIndex = 40;
             this.guna2GradientButton1.Text = "LOGIN";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // guna2GradientButton2
             // 
@@ -264,7 +268,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -226,6 +226,7 @@
             this.FinishBtn.Size = new System.Drawing.Size(108, 100);
             this.FinishBtn.TabIndex = 65;
             this.FinishBtn.Text = "Finish Order";
+            this.FinishBtn.Click += new System.EventHandler(this.FinishBtn_Click);
             // 
             // guna2GradientCircleButton1
             // 
