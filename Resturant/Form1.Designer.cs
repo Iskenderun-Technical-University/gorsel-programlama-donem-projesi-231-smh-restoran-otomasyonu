@@ -33,7 +33,6 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -48,6 +47,7 @@
             this.OutBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.EditMenuBtn = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.MakeOrderBtn = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.OrderGroup2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.ListOrder2 = new System.Windows.Forms.ListBox();
             this.OrderGroup7 = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -72,8 +72,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.GroupBox1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.OrderGroup2.SuspendLayout();
             this.OrderGroup7.SuspendLayout();
             this.OrderGroup6.SuspendLayout();
@@ -139,26 +139,6 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.OrderGroup2);
-            this.tabPage2.Controls.Add(this.OrderGroup7);
-            this.tabPage2.Controls.Add(this.OrderGroup6);
-            this.tabPage2.Controls.Add(this.OrderGroup1);
-            this.tabPage2.Controls.Add(this.OrderGroup10);
-            this.tabPage2.Controls.Add(this.OrderGroup5);
-            this.tabPage2.Controls.Add(this.OrderGroup9);
-            this.tabPage2.Controls.Add(this.OrderGroup8);
-            this.tabPage2.Controls.Add(this.OrderGroup4);
-            this.tabPage2.Controls.Add(this.OrderGroup3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 44);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1230, 572);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // guna2GradientCircleButton1
             // 
             this.guna2GradientCircleButton1.BackColor = System.Drawing.Color.Transparent;
@@ -177,6 +157,7 @@
             this.guna2GradientCircleButton1.Size = new System.Drawing.Size(109, 84);
             this.guna2GradientCircleButton1.TabIndex = 16;
             this.guna2GradientCircleButton1.Text = "Change Account Password";
+            this.guna2GradientCircleButton1.Click += new System.EventHandler(this.guna2GradientCircleButton1_Click);
             // 
             // GroupBox1
             // 
@@ -215,6 +196,7 @@
             this.guna2GradientButton1.Size = new System.Drawing.Size(108, 42);
             this.guna2GradientButton1.TabIndex = 8;
             this.guna2GradientButton1.Text = "Change";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // TextBox4
             // 
@@ -239,12 +221,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Jokerman", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label5.Location = new System.Drawing.Point(59, 153);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 43);
+            this.label5.Size = new System.Drawing.Size(101, 33);
             this.label5.TabIndex = 6;
             this.label5.Text = "43+32";
             // 
@@ -331,11 +313,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Italic);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic);
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(4, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 24);
+            this.label1.Size = new System.Drawing.Size(107, 25);
             this.label1.TabIndex = 14;
             this.label1.Text = "Welcome:";
             // 
@@ -357,6 +339,7 @@
             this.OutBtn.Size = new System.Drawing.Size(129, 54);
             this.OutBtn.TabIndex = 11;
             this.OutBtn.Text = "Sign Out";
+            this.OutBtn.Click += new System.EventHandler(this.OutBtn_Click);
             // 
             // EditMenuBtn
             // 
@@ -368,7 +351,7 @@
             this.EditMenuBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.EditMenuBtn.FillColor = System.Drawing.Color.DimGray;
             this.EditMenuBtn.FillColor2 = System.Drawing.Color.Black;
-            this.EditMenuBtn.Font = new System.Drawing.Font("Stencil", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.EditMenuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.EditMenuBtn.ForeColor = System.Drawing.Color.White;
             this.EditMenuBtn.Location = new System.Drawing.Point(127, 131);
             this.EditMenuBtn.Margin = new System.Windows.Forms.Padding(2);
@@ -377,6 +360,7 @@
             this.EditMenuBtn.Size = new System.Drawing.Size(240, 205);
             this.EditMenuBtn.TabIndex = 13;
             this.EditMenuBtn.Text = "Edit The Menu List";
+            this.EditMenuBtn.Click += new System.EventHandler(this.EditMenuBtn_Click);
             // 
             // MakeOrderBtn
             // 
@@ -388,7 +372,7 @@
             this.MakeOrderBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.MakeOrderBtn.FillColor = System.Drawing.Color.DimGray;
             this.MakeOrderBtn.FillColor2 = System.Drawing.Color.Black;
-            this.MakeOrderBtn.Font = new System.Drawing.Font("Stencil", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.MakeOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.MakeOrderBtn.ForeColor = System.Drawing.Color.White;
             this.MakeOrderBtn.Location = new System.Drawing.Point(647, 101);
             this.MakeOrderBtn.Margin = new System.Windows.Forms.Padding(2);
@@ -397,6 +381,27 @@
             this.MakeOrderBtn.Size = new System.Drawing.Size(373, 302);
             this.MakeOrderBtn.TabIndex = 12;
             this.MakeOrderBtn.Text = "Make A New Order";
+            this.MakeOrderBtn.Click += new System.EventHandler(this.MakeOrderBtn_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.OrderGroup2);
+            this.tabPage2.Controls.Add(this.OrderGroup7);
+            this.tabPage2.Controls.Add(this.OrderGroup6);
+            this.tabPage2.Controls.Add(this.OrderGroup1);
+            this.tabPage2.Controls.Add(this.OrderGroup10);
+            this.tabPage2.Controls.Add(this.OrderGroup5);
+            this.tabPage2.Controls.Add(this.OrderGroup9);
+            this.tabPage2.Controls.Add(this.OrderGroup8);
+            this.tabPage2.Controls.Add(this.OrderGroup4);
+            this.tabPage2.Controls.Add(this.OrderGroup3);
+            this.tabPage2.Location = new System.Drawing.Point(4, 44);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1230, 572);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // OrderGroup2
             // 
@@ -641,6 +646,7 @@
             this.button1.Size = new System.Drawing.Size(53, 40);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -655,9 +661,9 @@
             this.guna2TabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.OrderGroup2.ResumeLayout(false);
             this.OrderGroup7.ResumeLayout(false);
             this.OrderGroup6.ResumeLayout(false);

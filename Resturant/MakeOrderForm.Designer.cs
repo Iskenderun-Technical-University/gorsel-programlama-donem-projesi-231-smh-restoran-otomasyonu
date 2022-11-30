@@ -54,6 +54,7 @@
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QuantityCounter)).BeginInit();
             this.SuspendLayout();
@@ -87,6 +88,7 @@
             this.button1.Size = new System.Drawing.Size(50, 39);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Totallbl
             // 
@@ -174,6 +176,7 @@
             this.EndOrderBtn.Size = new System.Drawing.Size(119, 106);
             this.EndOrderBtn.TabIndex = 39;
             this.EndOrderBtn.Text = "Go To Pay";
+            this.EndOrderBtn.Click += new System.EventHandler(this.EndOrderBtn_Click);
             // 
             // label2
             // 
@@ -221,6 +224,7 @@
             this.PriceList.Name = "PriceList";
             this.PriceList.Size = new System.Drawing.Size(162, 282);
             this.PriceList.TabIndex = 35;
+            this.PriceList.SelectedIndexChanged += new System.EventHandler(this.PriceList_SelectedIndexChanged);
             // 
             // DishList
             // 
@@ -233,13 +237,14 @@
             this.DishList.Name = "DishList";
             this.DishList.Size = new System.Drawing.Size(359, 282);
             this.DishList.TabIndex = 34;
+            this.DishList.SelectedIndexChanged += new System.EventHandler(this.DishList_SelectedIndexChanged);
             // 
             // SoupsBtn
             // 
             this.SoupsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SoupsBtn.BackgroundImage")));
             this.SoupsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SoupsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SoupsBtn.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SoupsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SoupsBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SoupsBtn.Location = new System.Drawing.Point(253, 285);
             this.SoupsBtn.Name = "SoupsBtn";
@@ -247,13 +252,14 @@
             this.SoupsBtn.TabIndex = 33;
             this.SoupsBtn.Text = "Soups";
             this.SoupsBtn.UseVisualStyleBackColor = true;
+            this.SoupsBtn.Click += new System.EventHandler(this.SoupsBtn_Click);
             // 
             // DrinksBtn
             // 
             this.DrinksBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DrinksBtn.BackgroundImage")));
             this.DrinksBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.DrinksBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DrinksBtn.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DrinksBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DrinksBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.DrinksBtn.Location = new System.Drawing.Point(37, 485);
             this.DrinksBtn.Name = "DrinksBtn";
@@ -261,13 +267,14 @@
             this.DrinksBtn.TabIndex = 32;
             this.DrinksBtn.Text = "Drinks";
             this.DrinksBtn.UseVisualStyleBackColor = true;
+            this.DrinksBtn.Click += new System.EventHandler(this.DrinksBtn_Click);
             // 
             // DessertBtn
             // 
             this.DessertBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DessertBtn.BackgroundImage")));
             this.DessertBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.DessertBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DessertBtn.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DessertBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DessertBtn.ForeColor = System.Drawing.Color.White;
             this.DessertBtn.Location = new System.Drawing.Point(253, 82);
             this.DessertBtn.Name = "DessertBtn";
@@ -275,13 +282,14 @@
             this.DessertBtn.TabIndex = 31;
             this.DessertBtn.Text = "Dessert";
             this.DessertBtn.UseVisualStyleBackColor = true;
+            this.DessertBtn.Click += new System.EventHandler(this.DessertBtn_Click);
             // 
             // EntreesBtn
             // 
             this.EntreesBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EntreesBtn.BackgroundImage")));
             this.EntreesBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.EntreesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EntreesBtn.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EntreesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EntreesBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.EntreesBtn.Location = new System.Drawing.Point(37, 285);
             this.EntreesBtn.Name = "EntreesBtn";
@@ -289,13 +297,14 @@
             this.EntreesBtn.TabIndex = 30;
             this.EntreesBtn.Text = "Entrees";
             this.EntreesBtn.UseVisualStyleBackColor = true;
+            this.EntreesBtn.Click += new System.EventHandler(this.EntreesBtn_Click);
             // 
             // FoodBtn
             // 
             this.FoodBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FoodBtn.BackgroundImage")));
             this.FoodBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FoodBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FoodBtn.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FoodBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FoodBtn.ForeColor = System.Drawing.Color.White;
             this.FoodBtn.Location = new System.Drawing.Point(37, 82);
             this.FoodBtn.Name = "FoodBtn";
@@ -303,6 +312,7 @@
             this.FoodBtn.TabIndex = 29;
             this.FoodBtn.Text = "Foods";
             this.FoodBtn.UseVisualStyleBackColor = true;
+            this.FoodBtn.Click += new System.EventHandler(this.FoodBtn_Click);
             // 
             // guna2GradientButton1
             // 
@@ -320,6 +330,7 @@
             this.guna2GradientButton1.Size = new System.Drawing.Size(132, 50);
             this.guna2GradientButton1.TabIndex = 46;
             this.guna2GradientButton1.Text = "Back To Main Menu";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // guna2GradientButton2
             // 
@@ -337,6 +348,7 @@
             this.guna2GradientButton2.Size = new System.Drawing.Size(193, 65);
             this.guna2GradientButton2.TabIndex = 47;
             this.guna2GradientButton2.Text = "Back";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2GradientButton3
             // 
@@ -353,7 +365,8 @@
             this.guna2GradientButton3.Name = "guna2GradientButton3";
             this.guna2GradientButton3.Size = new System.Drawing.Size(194, 65);
             this.guna2GradientButton3.TabIndex = 48;
-            this.guna2GradientButton3.Text = "Back";
+            this.guna2GradientButton3.Text = "Next";
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // guna2GradientButton4
             // 
@@ -371,6 +384,7 @@
             this.guna2GradientButton4.Size = new System.Drawing.Size(150, 62);
             this.guna2GradientButton4.TabIndex = 49;
             this.guna2GradientButton4.Text = "Back To All Categories";
+            this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
             // 
             // guna2GradientButton5
             // 
@@ -388,12 +402,35 @@
             this.guna2GradientButton5.Size = new System.Drawing.Size(127, 52);
             this.guna2GradientButton5.TabIndex = 50;
             this.guna2GradientButton5.Text = "Delete From Order";
+            this.guna2GradientButton5.Click += new System.EventHandler(this.guna2GradientButton5_Click);
+            // 
+            // guna2GradientButton6
+            // 
+            this.guna2GradientButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton6.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton6.FillColor = System.Drawing.Color.White;
+            this.guna2GradientButton6.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientButton6.FocusedColor = System.Drawing.Color.White;
+            this.guna2GradientButton6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2GradientButton6.ForeColor = System.Drawing.Color.Black;
+            this.guna2GradientButton6.ImageSize = new System.Drawing.Size(15, 10);
+            this.guna2GradientButton6.Location = new System.Drawing.Point(334, 522);
+            this.guna2GradientButton6.Name = "guna2GradientButton6";
+            this.guna2GradientButton6.PressedColor = System.Drawing.Color.White;
+            this.guna2GradientButton6.Size = new System.Drawing.Size(125, 44);
+            this.guna2GradientButton6.TabIndex = 51;
+            this.guna2GradientButton6.Text = "add to order";
+            this.guna2GradientButton6.Click += new System.EventHandler(this.guna2GradientButton6_Click);
             // 
             // MakeOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1146, 699);
+            this.Controls.Add(this.guna2GradientButton6);
             this.Controls.Add(this.guna2GradientButton5);
             this.Controls.Add(this.guna2GradientButton4);
             this.Controls.Add(this.guna2GradientButton3);
@@ -452,5 +489,6 @@
         private System.Windows.Forms.Button DessertBtn;
         private System.Windows.Forms.Button EntreesBtn;
         private System.Windows.Forms.Button FoodBtn;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
     }
 }
