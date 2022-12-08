@@ -37,7 +37,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.SignUpLink = new System.Windows.Forms.LinkLabel();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.TxtPassword = new Guna.UI2.WinForms.Guna2TextBox();
@@ -131,20 +130,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 35;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // SignUpLink
-            // 
-            this.SignUpLink.AutoSize = true;
-            this.SignUpLink.BackColor = System.Drawing.Color.Transparent;
-            this.SignUpLink.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.SignUpLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SignUpLink.Location = new System.Drawing.Point(177, 286);
-            this.SignUpLink.Name = "SignUpLink";
-            this.SignUpLink.Size = new System.Drawing.Size(149, 13);
-            this.SignUpLink.TabIndex = 34;
-            this.SignUpLink.TabStop = true;
-            this.SignUpLink.Text = "Click Here To Create Account";
-            this.SignUpLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SignUpLink_LinkClicked);
             // 
             // label25
             // 
@@ -260,7 +245,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.SignUpLink);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.TxtPassword);
@@ -284,7 +268,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.LinkLabel SignUpLink;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private Guna.UI2.WinForms.Guna2TextBox TxtPassword;

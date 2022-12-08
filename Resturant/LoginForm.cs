@@ -37,11 +37,6 @@ namespace Resturant
             Login();
         }
 
-        private void SignUpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-         //   signupform.ShowDialog();
-        }
-
         private void guna2CustomCheckBox1_Click(object sender, EventArgs e)
         {
             TxtPassword.UseSystemPasswordChar = guna2CustomCheckBox1.Checked;
