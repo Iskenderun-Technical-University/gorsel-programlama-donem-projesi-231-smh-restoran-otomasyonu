@@ -26,10 +26,10 @@ namespace Resturant
         public static SqlDataAdapter da;
         public static DataSet ds;
         public static string userid, userpassword;
-        
+        public static MainForm mainForm = new MainForm();
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-            //Application.Exit();
+            this.Close();
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
@@ -44,15 +44,16 @@ namespace Resturant
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Application.Exit();
+            this.Close();
         }
 
         public void Login()
         {
             try
             {
-
-                string logintry = "select * from LoginTb Where UserID = '" + TxtUserID.Text + "' And Password ='" +TxtPassword.Text+ "'";
+                this.Hide();
+                mainForm.Show();
+                /*string logintry = "select * from LoginTb Where UserID = '" + TxtUserID.Text + "' And Password ='" +TxtPassword.Text+ "'";
                 SqlDataAdapter sda = new SqlDataAdapter(logintry, con);
                 DataTable dtable = new DataTable();
                 sda.Fill(dtable);
@@ -71,7 +72,7 @@ namespace Resturant
                 {
                     MessageBox.Show("Invaild Login Details!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     TxtUserID.Clear(); TxtPassword.Clear(); TxtUserID.Focus();
-                }
+                }*/
             }
             catch { MessageBox.Show("Error"); }
         }

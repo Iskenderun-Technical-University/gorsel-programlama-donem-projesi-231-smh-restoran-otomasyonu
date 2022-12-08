@@ -80,12 +80,13 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.DimGray;
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(1096, 3);
+            this.button1.Location = new System.Drawing.Point(1096, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 39);
+            this.button1.Size = new System.Drawing.Size(50, 38);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
