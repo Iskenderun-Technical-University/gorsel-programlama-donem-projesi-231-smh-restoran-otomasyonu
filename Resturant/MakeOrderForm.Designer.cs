@@ -106,7 +106,7 @@
             // 
             this.Quantitylbl.AutoSize = true;
             this.Quantitylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quantitylbl.Location = new System.Drawing.Point(165, 537);
+            this.Quantitylbl.Location = new System.Drawing.Point(249, 594);
             this.Quantitylbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Quantitylbl.Name = "Quantitylbl";
             this.Quantitylbl.Size = new System.Drawing.Size(81, 20);
@@ -119,7 +119,7 @@
             this.QuantityCounter.BackColor = System.Drawing.Color.Transparent;
             this.QuantityCounter.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.QuantityCounter.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.QuantityCounter.Location = new System.Drawing.Point(246, 522);
+            this.QuantityCounter.Location = new System.Drawing.Point(341, 581);
             this.QuantityCounter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.QuantityCounter.Minimum = new decimal(new int[] {
             1,
@@ -136,6 +136,7 @@
             0,
             0});
             this.QuantityCounter.Visible = false;
+            this.QuantityCounter.ValueChanged += new System.EventHandler(this.QuantityCounter_ValueChanged);
             // 
             // label5
             // 
@@ -183,7 +184,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(965, 181);
+            this.label2.Location = new System.Drawing.Point(987, 185);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 20);
@@ -194,7 +195,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(701, 181);
+            this.label1.Location = new System.Drawing.Point(820, 181);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 20);
@@ -207,10 +208,10 @@
             this.Foodlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Foodlist.FormattingEnabled = true;
             this.Foodlist.ItemHeight = 30;
-            this.Foodlist.Location = new System.Drawing.Point(53, 181);
+            this.Foodlist.Location = new System.Drawing.Point(465, 219);
             this.Foodlist.Margin = new System.Windows.Forms.Padding(2);
             this.Foodlist.Name = "Foodlist";
-            this.Foodlist.Size = new System.Drawing.Size(387, 270);
+            this.Foodlist.Size = new System.Drawing.Size(317, 270);
             this.Foodlist.TabIndex = 36;
             this.Foodlist.Visible = false;
             // 
@@ -220,10 +221,10 @@
             this.PriceList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriceList.FormattingEnabled = true;
             this.PriceList.ItemHeight = 20;
-            this.PriceList.Location = new System.Drawing.Point(926, 207);
+            this.PriceList.Location = new System.Drawing.Point(969, 207);
             this.PriceList.Margin = new System.Windows.Forms.Padding(2);
             this.PriceList.Name = "PriceList";
-            this.PriceList.Size = new System.Drawing.Size(162, 282);
+            this.PriceList.Size = new System.Drawing.Size(119, 282);
             this.PriceList.TabIndex = 35;
             this.PriceList.SelectedIndexChanged += new System.EventHandler(this.PriceList_SelectedIndexChanged);
             // 
@@ -233,10 +234,10 @@
             this.DishList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DishList.FormattingEnabled = true;
             this.DishList.ItemHeight = 20;
-            this.DishList.Location = new System.Drawing.Point(569, 207);
+            this.DishList.Location = new System.Drawing.Point(785, 207);
             this.DishList.Margin = new System.Windows.Forms.Padding(2);
             this.DishList.Name = "DishList";
-            this.DishList.Size = new System.Drawing.Size(359, 282);
+            this.DishList.Size = new System.Drawing.Size(183, 282);
             this.DishList.TabIndex = 34;
             this.DishList.SelectedIndexChanged += new System.EventHandler(this.DishList_SelectedIndexChanged);
             // 
@@ -326,9 +327,9 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(991, 73);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(969, 44);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(132, 50);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(132, 34);
             this.guna2GradientButton1.TabIndex = 46;
             this.guna2GradientButton1.Text = "Back To Main Menu";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
@@ -344,9 +345,9 @@
             this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(53, 450);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(465, 492);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.Size = new System.Drawing.Size(193, 65);
+            this.guna2GradientButton2.Size = new System.Drawing.Size(165, 65);
             this.guna2GradientButton2.TabIndex = 47;
             this.guna2GradientButton2.Text = "Back";
             this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
@@ -362,9 +363,9 @@
             this.guna2GradientButton3.FillColor2 = System.Drawing.Color.White;
             this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(246, 450);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(635, 492);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(194, 65);
+            this.guna2GradientButton3.Size = new System.Drawing.Size(149, 65);
             this.guna2GradientButton3.TabIndex = 48;
             this.guna2GradientButton3.Text = "Next";
             this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
@@ -380,9 +381,9 @@
             this.guna2GradientButton4.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(37, 61);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(37, 44);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.Size = new System.Drawing.Size(150, 62);
+            this.guna2GradientButton4.Size = new System.Drawing.Size(150, 32);
             this.guna2GradientButton4.TabIndex = 49;
             this.guna2GradientButton4.Text = "Back To All Categories";
             this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
@@ -418,7 +419,7 @@
             this.guna2GradientButton6.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2GradientButton6.ForeColor = System.Drawing.Color.Black;
             this.guna2GradientButton6.ImageSize = new System.Drawing.Size(15, 10);
-            this.guna2GradientButton6.Location = new System.Drawing.Point(334, 522);
+            this.guna2GradientButton6.Location = new System.Drawing.Point(429, 581);
             this.guna2GradientButton6.Name = "guna2GradientButton6";
             this.guna2GradientButton6.PressedColor = System.Drawing.Color.White;
             this.guna2GradientButton6.Size = new System.Drawing.Size(125, 44);

@@ -99,6 +99,7 @@
             this.guna2CheckBox2.UncheckedState.BorderThickness = 0;
             this.guna2CheckBox2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBox2.Visible = false;
+            this.guna2CheckBox2.CheckedChanged += new System.EventHandler(this.guna2CheckBox2_CheckedChanged);
             // 
             // FinishButton
             // 
@@ -137,6 +138,7 @@
             this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
             this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBox1.Visible = false;
+            this.guna2CheckBox1.CheckedChanged += new System.EventHandler(this.guna2CheckBox1_CheckedChanged);
             // 
             // TextBox2
             // 
@@ -454,6 +456,7 @@
             this.label6.TabIndex = 63;
             this.label6.Text = "A New Category In Another Category";
             this.label6.Visible = false;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // RadioButton6
             // 

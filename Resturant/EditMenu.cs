@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Resturant
 {
@@ -25,6 +27,23 @@ namespace Resturant
         public EditMenu()
         {
             InitializeComponent();
+        }
+
+        private void guna2CheckBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (guna2CheckBox1.Checked == true) { TextBox2.Text = listBox1.Text; TextBox2.Enabled = false; }
+            else { TextBox2.Clear(); TextBox2.Enabled = true; }
+        }
+
+        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (guna2CheckBox2.Checked == true) { TextBox1.Text = Foodlist.Text; TextBox1.Enabled = false; }
+            else { TextBox1.Clear(); TextBox1.Enabled = true; }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void FinishButton_Click(object sender, EventArgs e)
@@ -464,6 +483,8 @@ namespace Resturant
                 }
 
             }
+
+            
         }
     }
 }

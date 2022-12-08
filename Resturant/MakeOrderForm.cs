@@ -38,7 +38,7 @@ namespace Resturant
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //   LoginForm.Form1.Show();
+           // MainForm.Show();
         }
 
         private void guna2GradientButton5_Click(object sender, EventArgs e)
@@ -55,6 +55,7 @@ namespace Resturant
 
         private void EndOrderBtn_Click(object sender, EventArgs e)
         {
+            //PayForm.Show();
             /* Form1.PayForm.DishList.Items.Clear();
              Form1.PayForm.PriceList.Items.Clear();
              if (DishList.Items.Count == 0) { MessageBox.Show("You Can't Go To Pay Step With Empty List!!, Please Add Something!"); }
@@ -229,6 +230,11 @@ namespace Resturant
         private void PriceList_SelectedIndexChanged(object sender, EventArgs e)
         {
             DishList.SelectedIndex = PriceList.SelectedIndex;
+        }
+
+        private void QuantityCounter_ValueChanged(object sender, EventArgs e)
+        {
+
         }
 
         void inCate()

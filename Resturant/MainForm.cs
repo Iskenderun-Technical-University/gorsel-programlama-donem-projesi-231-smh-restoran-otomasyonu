@@ -27,7 +27,19 @@ namespace Resturant
         SqlConnection con = new SqlConnection(Sqlcon);
         private void EditMenuBtn_Click(object sender, EventArgs e)
         {
-            //editMenu.Show();
+            EditMenu f = new EditMenu();
+
+            if (false == null)
+            {
+                f = new EditMenu();
+                f.Show();
+            }
+            else
+            {
+                f.Show();
+
+            }
+            // EditMenu.Show();
         }
 
         private void MakeOrderBtn_Click(object sender, EventArgs e)
