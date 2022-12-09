@@ -20,13 +20,15 @@ namespace Resturant
         {
             InitializeComponent();
         }
-        public static string sqlCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Resturant Application Version 1.0\Resturant Application\Database.mdf;Integrated Security = True";
-        //public static Form1 Form1 = new Form1();
+        public static string sqlCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mmrkh\Documents\GitHub\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\Database.mdf;Integrated Security=True";
         public static SqlConnection con = new SqlConnection(sqlCon);
         public static SqlDataAdapter da;
         public static DataSet ds;
         public static string userid, userpassword;
         public static MainForm mainForm = new MainForm();
+        public static PayForm payForm = new PayForm();
+        public static MakeOrderForm orderForm = new MakeOrderForm();
+
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -53,7 +55,7 @@ namespace Resturant
             {
                 this.Hide();
                 mainForm.Show();
-                /*string logintry = "select * from LoginTb Where UserID = '" + TxtUserID.Text + "' And Password ='" +TxtPassword.Text+ "'";
+                string logintry = "select * from LoginTb Where UserID = '" + TxtUserID.Text + "' And Password ='" +TxtPassword.Text+ "'";
                 SqlDataAdapter sda = new SqlDataAdapter(logintry, con);
                 DataTable dtable = new DataTable();
                 sda.Fill(dtable);
@@ -63,16 +65,16 @@ namespace Resturant
                     TxtUserID.Clear(); TxtPassword.Clear();
                     con.Open();
                     SqlCommand command = new SqlCommand("select UserName from LoginTb where UserID='" + LoginForm.userid + "'", con);
-                    //Form1.label1.Text = "Welcome " + command.ExecuteScalar().ToString();
+                    mainForm.label1.Text = "Welcome " + command.ExecuteScalar().ToString();
                     con.Close();
                     this.Hide();
-                    //Form1.Show();
+                    mainForm.Show();
                 }
                 else
                 {
                     MessageBox.Show("Invaild Login Details!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     TxtUserID.Clear(); TxtPassword.Clear(); TxtUserID.Focus();
-                }*/
+                }
             }
             catch { MessageBox.Show("Error"); }
         }

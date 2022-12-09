@@ -69,5 +69,25 @@ namespace Resturant.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kissclipart_eftpos_terminal_icon_clipart_payment_terminal_cred_f468238de18ba077 {
+            get {
+                object obj = ResourceManager.GetObject("kissclipart-eftpos-terminal-icon-clipart-payment-terminal-cred-f468238de18ba077", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kissclipart_stock_clipart_stock_certificate_share_dbb4775f1d0b9c23 {
+            get {
+                object obj = ResourceManager.GetObject("kissclipart-stock-clipart-stock-certificate-share-dbb4775f1d0b9c23", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

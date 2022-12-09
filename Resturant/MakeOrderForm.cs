@@ -23,103 +23,59 @@ namespace Resturant
         float TempIndex, CurrentPlace;
         int counter = 1;
 
-        //public static string sqlCon =
-        public static string sqlCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Resturant Application Version 1.0\Resturant Application\Database.mdf;Integrated Security = True";
-        public static SqlConnection con = new SqlConnection(sqlCon);
+        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mmrkh\Documents\GitHub\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\Database.mdf;Integrated Security=True";
+        public static SqlConnection con = new SqlConnection(Sqlcon);
         public static SqlDataAdapter da;
         public static DataSet ds;
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            // LoginForm.Form1.Show();
+             LoginForm.mainForm.Show();
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-           // MainForm.Show();
+           LoginForm.mainForm.Show();
         }
 
         private void guna2GradientButton5_Click(object sender, EventArgs e)
         {
-            /*  int temp = DishList.SelectedIndex;
+             int temp = DishList.SelectedIndex;
               if (DishList.SelectedIndex != -1)
               {
                   total -= Convert.ToSingle(PriceList.Items[temp].ToString());
                   DishList.Items.RemoveAt(temp);
                   PriceList.Items.RemoveAt(temp);
               }
-              Totallbl.Text = total.ToString();*/
+              Totallbl.Text = total.ToString();
         }
 
         private void EndOrderBtn_Click(object sender, EventArgs e)
         {
-            //PayForm.Show();
-            /* Form1.PayForm.DishList.Items.Clear();
-             Form1.PayForm.PriceList.Items.Clear();
-             if (DishList.Items.Count == 0) { MessageBox.Show("You Can't Go To Pay Step With Empty List!!, Please Add Something!"); }
-             else
-             {
-                 for (int i = 0; i < DishList.Items.Count; i++)
-                 {
-                     Form1.PayForm.DishList.Items.Add(DishList.Items[i]);
-                     Form1.PayForm.PriceList.Items.Add(PriceList.Items[i]);
-                 }
-                 Form1.PayForm.Show();*/
-        }
-
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
-        {
-            /*NextBtn.Enabled = true;
-            da = new SqlDataAdapter("select Data from FoodsMenuTb where [index] ='" + TempIndex + "' and Type ='" + Type + "'", con);
-            ds = new DataSet();
-            da.Fill(ds, "FoodsMenuTb");
-            if (ds.Tables["FoodsMenuTb"].Rows.Count != 0)
+            LoginForm.payForm.DishList.Items.Clear();
+            LoginForm.payForm.PriceList.Items.Clear();
+            if (DishList.Items.Count == 0) { MessageBox.Show("You Can't Go To Pay Step With Empty List!!, Please Add Something!"); }
+            else
             {
-                counter--; Foodlist.Items.Clear();
-                for (int i = 0; i < ds.Tables["FoodsMenuTb"].Rows.Count; i++) Foodlist.Items.Add(ds.Tables["FoodsMenuTb"].Rows[i][0].ToString());
-                da = new SqlDataAdapter("select [index],Place from FoodsMenuTb where Place ='" + TempIndex + "' and Type ='" + Type + "'", con);
-                ds = new DataSet();
-                da.Fill(ds, "FoodsMenuTb");
-                if (ds.Tables["FoodsMenuTb"].Rows.Count != 0)
+                for (int i = 0; i < DishList.Items.Count; i++)
                 {
-                    TempIndex = Convert.ToSingle(ds.Tables["FoodsMenuTb"].Rows[0][0]);
-                    CurrentPlace = Convert.ToSingle(ds.Tables["FoodsMenuTb"].Rows[0][1]);*/
-        }
+                    LoginForm.payForm.DishList.Items.Add(DishList.Items[i]);
+                    LoginForm.payForm.PriceList.Items.Add(PriceList.Items[i]);
+                }
 
-        private void guna2GradientButton3_Click(object sender, EventArgs e)
-        {
-            /* if (Foodlist.SelectedIndex != -1)
-             {
-                 float temp1;
-                 con = new SqlConnection(sqlCon);
-                 con.Open();
-                 string query = "select [index],Place from FoodsMenuTb where Data ='" + Foodlist.Text + "' and Type ='" + Type + "'";
-                 SqlDataAdapter sda = new SqlDataAdapter(query, con);
-                 DataTable dtable = new DataTable();
-                 sda.Fill(dtable);
-                 if (dtable.Rows.Count > 0)
-                 {
-                     temp1 = Convert.ToSingle(dtable.Rows[0][1]);
-                     da = new SqlDataAdapter("select Data from FoodsMenuTb where [index] ='" + temp1 + "' and Type ='" + Type + "'", con);
-                     ds = new DataSet();
-                     da.Fill(ds, "FoodsMenuTb");
-                     if (ds.Tables["FoodsMenuTb"].Rows.Count != 0 && ds.Tables["FoodsMenuTb"].Rows[0][0].ToString() != "NULL")
-                     {
-                         TempIndex = Convert.ToSingle(dtable.Rows[0][0]);
-                         CurrentPlace = Convert.ToSingle(dtable.Rows[0][1]);
-                         counter++; Foodlist.Items.Clear(); BackBtn.Enabled = true;
-                         for (int i = 0; i < ds.Tables["FoodsMenuTb"].Rows.Count; i++) Foodlist.Items.Add(ds.Tables["FoodsMenuTb"].Rows[i][0].ToString());
-                     }
-                     con.Close();*/
-
+                LoginForm.payForm.Show();
+            }
         }
+            
+
+        
 
         private void guna2GradientButton6_Click(object sender, EventArgs e)
         {
             try
-            {/*
+            {
                 float price; string Order = "";
                 da = new SqlDataAdapter("select Price from FoodsMenuTb where Data ='" + Foodlist.Text + "' and Type ='" + Type + "'", con);
                 ds = new DataSet();
@@ -155,16 +111,16 @@ namespace Resturant
                             Totallbl.Text = total.ToString(); QuantityCounter.Value = 1;
                         }
                     }
-                }*/
+                }
             }
             catch { }
         }
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
         {
-          /*FoodBtn.Visible = true; DessertBtn.Visible = true; EntreesBtn.Visible = true; NextBtn.Visible = false; Quantitylbl.Visible = false;
+          FoodBtn.Visible = true; DessertBtn.Visible = true; EntreesBtn.Visible = true; NextBtn.Visible = false; Quantitylbl.Visible = false;
             SoupsBtn.Visible = true; DrinksBtn.Visible = true; BackCateBtn.Visible = false; QuantityCounter.Visible = false;
-            Foodlist.Visible = false; AddOrderBtn.Visible = false; BackBtn.Visible = false; Foodlist.Items.Clear(); counter = 1;*/
+            Foodlist.Visible = false; AddOrderBtn.Visible = false; BackBtn.Visible = false; Foodlist.Items.Clear(); counter = 1;
         }
 
         private void FoodBtn_Click(object sender, EventArgs e)
@@ -232,16 +188,61 @@ namespace Resturant
             DishList.SelectedIndex = PriceList.SelectedIndex;
         }
 
-        private void QuantityCounter_ValueChanged(object sender, EventArgs e)
+        private void BackBtn_Click(object sender, EventArgs e)
         {
+            NextBtn.Enabled = true;
+            da = new SqlDataAdapter("select Data from FoodsMenuTb where [index] ='" + TempIndex + "' and Type ='" + Type + "'", con);
+            ds = new DataSet();
+            da.Fill(ds, "FoodsMenuTb");
+            if (ds.Tables["FoodsMenuTb"].Rows.Count != 0)
+            {
+                counter--; Foodlist.Items.Clear();
+                for (int i = 0; i < ds.Tables["FoodsMenuTb"].Rows.Count; i++) Foodlist.Items.Add(ds.Tables["FoodsMenuTb"].Rows[i][0].ToString());
+                da = new SqlDataAdapter("select [index],Place from FoodsMenuTb where Place ='" + TempIndex + "' and Type ='" + Type + "'", con);
+                ds = new DataSet();
+                da.Fill(ds, "FoodsMenuTb");
+                if (ds.Tables["FoodsMenuTb"].Rows.Count != 0)
+                {
+                    TempIndex = Convert.ToSingle(ds.Tables["FoodsMenuTb"].Rows[0][0]);
+                    CurrentPlace = Convert.ToSingle(ds.Tables["FoodsMenuTb"].Rows[0][1]);
+                }
+            }
+        }
 
+        private void NextBtn_Click(object sender, EventArgs e)
+        {
+            if (Foodlist.SelectedIndex != -1)
+            {
+                float temp1;
+                con = new SqlConnection(Sqlcon);
+                con.Open();
+                string query = "select [index],Place from FoodsMenuTb where Data ='" + Foodlist.Text + "' and Type ='" + Type + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
+                if (dtable.Rows.Count > 0)
+                {
+                    temp1 = Convert.ToSingle(dtable.Rows[0][1]);
+                    da = new SqlDataAdapter("select Data from FoodsMenuTb where [index] ='" + temp1 + "' and Type ='" + Type + "'", con);
+                    ds = new DataSet();
+                    da.Fill(ds, "FoodsMenuTb");
+                    if (ds.Tables["FoodsMenuTb"].Rows.Count != 0 && ds.Tables["FoodsMenuTb"].Rows[0][0].ToString() != "NULL")
+                    {
+                        TempIndex = Convert.ToSingle(dtable.Rows[0][0]);
+                        CurrentPlace = Convert.ToSingle(dtable.Rows[0][1]);
+                        counter++; Foodlist.Items.Clear(); BackBtn.Enabled = true;
+                        for (int i = 0; i < ds.Tables["FoodsMenuTb"].Rows.Count; i++) Foodlist.Items.Add(ds.Tables["FoodsMenuTb"].Rows[i][0].ToString());
+                    }
+                    con.Close();
+                }
+            }
         }
 
         void inCate()
         {
-            /*FoodBtn.Visible = false; DessertBtn.Visible = false; EntreesBtn.Visible = false; Quantitylbl.Visible = true;
+            FoodBtn.Visible = false; DessertBtn.Visible = false; EntreesBtn.Visible = false; Quantitylbl.Visible = true;
             SoupsBtn.Visible = false; DrinksBtn.Visible = false; BackCateBtn.Visible = true; NextBtn.Visible = true;
-            Foodlist.Visible = true; BackBtn.Visible = true; AddOrderBtn.Visible = true; QuantityCounter.Visible = true;*/
+            Foodlist.Visible = true; BackBtn.Visible = true; AddOrderBtn.Visible = true; QuantityCounter.Visible = true;
         }
 
 

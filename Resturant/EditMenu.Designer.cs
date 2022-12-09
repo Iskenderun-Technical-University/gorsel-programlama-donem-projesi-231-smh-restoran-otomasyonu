@@ -59,6 +59,8 @@
             this.RadioButton6 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.NextBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BackBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GroupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -209,11 +211,12 @@
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 30;
-            this.listBox1.Location = new System.Drawing.Point(752, 76);
+            this.listBox1.Location = new System.Drawing.Point(758, 76);
             this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(153, 210);
+            this.listBox1.Size = new System.Drawing.Size(146, 210);
             this.listBox1.TabIndex = 70;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Foodlist
             // 
@@ -224,8 +227,9 @@
             this.Foodlist.Location = new System.Drawing.Point(445, 76);
             this.Foodlist.Margin = new System.Windows.Forms.Padding(2);
             this.Foodlist.Name = "Foodlist";
-            this.Foodlist.Size = new System.Drawing.Size(303, 210);
+            this.Foodlist.Size = new System.Drawing.Size(309, 210);
             this.Foodlist.TabIndex = 69;
+            this.Foodlist.SelectedIndexChanged += new System.EventHandler(this.Foodlist_SelectedIndexChanged);
             // 
             // ComboBox1
             // 
@@ -240,10 +244,17 @@
             this.ComboBox1.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F);
             this.ComboBox1.ForeColor = System.Drawing.Color.Black;
             this.ComboBox1.ItemHeight = 30;
+            this.ComboBox1.Items.AddRange(new object[] {
+            "Drinks",
+            "Foods",
+            "Dessert",
+            "Entrees",
+            "Soups"});
             this.ComboBox1.Location = new System.Drawing.Point(229, 86);
             this.ComboBox1.Name = "ComboBox1";
             this.ComboBox1.Size = new System.Drawing.Size(149, 36);
             this.ComboBox1.TabIndex = 68;
+            this.ComboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -293,6 +304,7 @@
             this.RadioButton.UncheckedState.BorderThickness = 2;
             this.RadioButton.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.RadioButton.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.RadioButton.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
             // RadioButton3
             // 
@@ -310,6 +322,7 @@
             this.RadioButton3.UncheckedState.BorderThickness = 2;
             this.RadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.RadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.RadioButton3.CheckedChanged += new System.EventHandler(this.RadioButton3_CheckedChanged);
             // 
             // label1
             // 
@@ -360,6 +373,7 @@
             this.RadioButton1.UncheckedState.BorderThickness = 2;
             this.RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.RadioButton1.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
             // 
             // label4
             // 
@@ -388,6 +402,7 @@
             this.RadioButton2.UncheckedState.BorderThickness = 2;
             this.RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.RadioButton2.CheckedChanged += new System.EventHandler(this.RadioButton2_CheckedChanged);
             // 
             // RadioButton4
             // 
@@ -405,6 +420,7 @@
             this.RadioButton4.UncheckedState.BorderThickness = 2;
             this.RadioButton4.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.RadioButton4.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.RadioButton4.CheckedChanged += new System.EventHandler(this.RadioButton4_CheckedChanged);
             // 
             // label18
             // 
@@ -500,6 +516,45 @@
             this.button1.Size = new System.Drawing.Size(43, 37);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // NextBtn
+            // 
+            this.NextBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.NextBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.NextBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.NextBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.NextBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.NextBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.NextBtn.FillColor2 = System.Drawing.Color.White;
+            this.NextBtn.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.NextBtn.ForeColor = System.Drawing.Color.Black;
+            this.NextBtn.Location = new System.Drawing.Point(605, 286);
+            this.NextBtn.Name = "NextBtn";
+            this.NextBtn.Size = new System.Drawing.Size(149, 65);
+            this.NextBtn.TabIndex = 80;
+            this.NextBtn.Text = "Next";
+            this.NextBtn.Visible = false;
+            this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
+            // 
+            // BackBtn
+            // 
+            this.BackBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BackBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BackBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BackBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BackBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BackBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackBtn.FillColor2 = System.Drawing.Color.Black;
+            this.BackBtn.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.BackBtn.ForeColor = System.Drawing.Color.White;
+            this.BackBtn.Location = new System.Drawing.Point(445, 286);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(165, 65);
+            this.BackBtn.TabIndex = 79;
+            this.BackBtn.Text = "Back";
+            this.BackBtn.Visible = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // EditMenu
             // 
@@ -507,6 +562,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(929, 587);
+            this.Controls.Add(this.NextBtn);
+            this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.guna2CheckBox2);
             this.Controls.Add(this.FinishButton);
@@ -529,6 +586,7 @@
             this.Name = "EditMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditMenu";
+            this.Load += new System.EventHandler(this.EditMenu_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -569,5 +627,7 @@
         private Guna.UI2.WinForms.Guna2CustomRadioButton RadioButton6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private Guna.UI2.WinForms.Guna2GradientButton NextBtn;
+        private Guna.UI2.WinForms.Guna2GradientButton BackBtn;
     }
 }

@@ -50,11 +50,11 @@
             this.EntreesBtn = new System.Windows.Forms.Button();
             this.FoodBtn = new System.Windows.Forms.Button();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BackBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.NextBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BackCateBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.AddOrderBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QuantityCounter)).BeginInit();
             this.SuspendLayout();
@@ -106,7 +106,7 @@
             // 
             this.Quantitylbl.AutoSize = true;
             this.Quantitylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quantitylbl.Location = new System.Drawing.Point(249, 594);
+            this.Quantitylbl.Location = new System.Drawing.Point(212, 566);
             this.Quantitylbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Quantitylbl.Name = "Quantitylbl";
             this.Quantitylbl.Size = new System.Drawing.Size(81, 20);
@@ -119,7 +119,7 @@
             this.QuantityCounter.BackColor = System.Drawing.Color.Transparent;
             this.QuantityCounter.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.QuantityCounter.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.QuantityCounter.Location = new System.Drawing.Point(341, 581);
+            this.QuantityCounter.Location = new System.Drawing.Point(304, 553);
             this.QuantityCounter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.QuantityCounter.Minimum = new decimal(new int[] {
             1,
@@ -136,7 +136,6 @@
             0,
             0});
             this.QuantityCounter.Visible = false;
-            this.QuantityCounter.ValueChanged += new System.EventHandler(this.QuantityCounter_ValueChanged);
             // 
             // label5
             // 
@@ -145,9 +144,9 @@
             this.label5.Location = new System.Drawing.Point(922, 522);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 20);
+            this.label5.Size = new System.Drawing.Size(29, 20);
             this.label5.TabIndex = 41;
-            this.label5.Text = "EGP";
+            this.label5.Text = "TL";
             // 
             // label3
             // 
@@ -184,7 +183,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(987, 185);
+            this.label2.Location = new System.Drawing.Point(965, 184);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 20);
@@ -195,7 +194,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(820, 181);
+            this.label1.Location = new System.Drawing.Point(747, 185);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 20);
@@ -208,7 +207,7 @@
             this.Foodlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Foodlist.FormattingEnabled = true;
             this.Foodlist.ItemHeight = 30;
-            this.Foodlist.Location = new System.Drawing.Point(465, 219);
+            this.Foodlist.Location = new System.Drawing.Point(202, 185);
             this.Foodlist.Margin = new System.Windows.Forms.Padding(2);
             this.Foodlist.Name = "Foodlist";
             this.Foodlist.Size = new System.Drawing.Size(317, 270);
@@ -221,10 +220,10 @@
             this.PriceList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriceList.FormattingEnabled = true;
             this.PriceList.ItemHeight = 20;
-            this.PriceList.Location = new System.Drawing.Point(969, 207);
+            this.PriceList.Location = new System.Drawing.Point(928, 207);
             this.PriceList.Margin = new System.Windows.Forms.Padding(2);
             this.PriceList.Name = "PriceList";
-            this.PriceList.Size = new System.Drawing.Size(119, 282);
+            this.PriceList.Size = new System.Drawing.Size(152, 282);
             this.PriceList.TabIndex = 35;
             this.PriceList.SelectedIndexChanged += new System.EventHandler(this.PriceList_SelectedIndexChanged);
             // 
@@ -234,10 +233,10 @@
             this.DishList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DishList.FormattingEnabled = true;
             this.DishList.ItemHeight = 20;
-            this.DishList.Location = new System.Drawing.Point(785, 207);
+            this.DishList.Location = new System.Drawing.Point(654, 207);
             this.DishList.Margin = new System.Windows.Forms.Padding(2);
             this.DishList.Name = "DishList";
-            this.DishList.Size = new System.Drawing.Size(183, 282);
+            this.DishList.Size = new System.Drawing.Size(275, 282);
             this.DishList.TabIndex = 34;
             this.DishList.SelectedIndexChanged += new System.EventHandler(this.DishList_SelectedIndexChanged);
             // 
@@ -334,59 +333,61 @@
             this.guna2GradientButton1.Text = "Back To Main Menu";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
-            // guna2GradientButton2
+            // BackBtn
             // 
-            this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Black;
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(465, 492);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.Size = new System.Drawing.Size(165, 65);
-            this.guna2GradientButton2.TabIndex = 47;
-            this.guna2GradientButton2.Text = "Back";
-            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
+            this.BackBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BackBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BackBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BackBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BackBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BackBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackBtn.FillColor2 = System.Drawing.Color.Black;
+            this.BackBtn.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.BackBtn.ForeColor = System.Drawing.Color.White;
+            this.BackBtn.Location = new System.Drawing.Point(202, 454);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(165, 65);
+            this.BackBtn.TabIndex = 47;
+            this.BackBtn.Text = "Back";
+            this.BackBtn.Visible = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
-            // guna2GradientButton3
+            // NextBtn
             // 
-            this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(635, 492);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(149, 65);
-            this.guna2GradientButton3.TabIndex = 48;
-            this.guna2GradientButton3.Text = "Next";
-            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
+            this.NextBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.NextBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.NextBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.NextBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.NextBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.NextBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.NextBtn.FillColor2 = System.Drawing.Color.White;
+            this.NextBtn.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.NextBtn.ForeColor = System.Drawing.Color.Black;
+            this.NextBtn.Location = new System.Drawing.Point(363, 454);
+            this.NextBtn.Name = "NextBtn";
+            this.NextBtn.Size = new System.Drawing.Size(156, 65);
+            this.NextBtn.TabIndex = 48;
+            this.NextBtn.Text = "Next";
+            this.NextBtn.Visible = false;
+            this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
             // 
-            // guna2GradientButton4
+            // BackCateBtn
             // 
-            this.guna2GradientButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.Black;
-            this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(37, 44);
-            this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.Size = new System.Drawing.Size(150, 32);
-            this.guna2GradientButton4.TabIndex = 49;
-            this.guna2GradientButton4.Text = "Back To All Categories";
-            this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
+            this.BackCateBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BackCateBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BackCateBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BackCateBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BackCateBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BackCateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackCateBtn.FillColor2 = System.Drawing.Color.Black;
+            this.BackCateBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BackCateBtn.ForeColor = System.Drawing.Color.White;
+            this.BackCateBtn.Location = new System.Drawing.Point(37, 44);
+            this.BackCateBtn.Name = "BackCateBtn";
+            this.BackCateBtn.Size = new System.Drawing.Size(150, 32);
+            this.BackCateBtn.TabIndex = 49;
+            this.BackCateBtn.Text = "Back To All Categories";
+            this.BackCateBtn.Click += new System.EventHandler(this.guna2GradientButton4_Click);
             // 
             // guna2GradientButton5
             // 
@@ -399,44 +400,44 @@
             this.guna2GradientButton5.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton5.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton5.Location = new System.Drawing.Point(961, 437);
+            this.guna2GradientButton5.Location = new System.Drawing.Point(980, 440);
             this.guna2GradientButton5.Name = "guna2GradientButton5";
-            this.guna2GradientButton5.Size = new System.Drawing.Size(127, 52);
+            this.guna2GradientButton5.Size = new System.Drawing.Size(98, 47);
             this.guna2GradientButton5.TabIndex = 50;
             this.guna2GradientButton5.Text = "Delete From Order";
             this.guna2GradientButton5.Click += new System.EventHandler(this.guna2GradientButton5_Click);
             // 
-            // guna2GradientButton6
+            // AddOrderBtn
             // 
-            this.guna2GradientButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton6.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton6.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton6.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton6.FocusedColor = System.Drawing.Color.White;
-            this.guna2GradientButton6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2GradientButton6.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton6.ImageSize = new System.Drawing.Size(15, 10);
-            this.guna2GradientButton6.Location = new System.Drawing.Point(429, 581);
-            this.guna2GradientButton6.Name = "guna2GradientButton6";
-            this.guna2GradientButton6.PressedColor = System.Drawing.Color.White;
-            this.guna2GradientButton6.Size = new System.Drawing.Size(125, 44);
-            this.guna2GradientButton6.TabIndex = 51;
-            this.guna2GradientButton6.Text = "add to order";
-            this.guna2GradientButton6.Click += new System.EventHandler(this.guna2GradientButton6_Click);
+            this.AddOrderBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AddOrderBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AddOrderBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AddOrderBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AddOrderBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AddOrderBtn.FillColor = System.Drawing.Color.White;
+            this.AddOrderBtn.FillColor2 = System.Drawing.Color.White;
+            this.AddOrderBtn.FocusedColor = System.Drawing.Color.White;
+            this.AddOrderBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.AddOrderBtn.ForeColor = System.Drawing.Color.Black;
+            this.AddOrderBtn.ImageSize = new System.Drawing.Size(15, 10);
+            this.AddOrderBtn.Location = new System.Drawing.Point(394, 551);
+            this.AddOrderBtn.Name = "AddOrderBtn";
+            this.AddOrderBtn.PressedColor = System.Drawing.Color.White;
+            this.AddOrderBtn.Size = new System.Drawing.Size(125, 44);
+            this.AddOrderBtn.TabIndex = 51;
+            this.AddOrderBtn.Text = "add to order";
+            this.AddOrderBtn.Click += new System.EventHandler(this.guna2GradientButton6_Click);
             // 
             // MakeOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1146, 699);
-            this.Controls.Add(this.guna2GradientButton6);
+            this.Controls.Add(this.AddOrderBtn);
             this.Controls.Add(this.guna2GradientButton5);
-            this.Controls.Add(this.guna2GradientButton4);
-            this.Controls.Add(this.guna2GradientButton3);
-            this.Controls.Add(this.guna2GradientButton2);
+            this.Controls.Add(this.BackCateBtn);
+            this.Controls.Add(this.NextBtn);
+            this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Totallbl);
@@ -457,6 +458,7 @@
             this.Controls.Add(this.FoodBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MakeOrderForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MakeOrderForm";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.QuantityCounter)).EndInit();
@@ -469,9 +471,8 @@
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton NextBtn;
+        private Guna.UI2.WinForms.Guna2GradientButton BackBtn;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
@@ -491,6 +492,7 @@
         private System.Windows.Forms.Button DessertBtn;
         private System.Windows.Forms.Button EntreesBtn;
         private System.Windows.Forms.Button FoodBtn;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
+        private Guna.UI2.WinForms.Guna2GradientButton AddOrderBtn;
+        public Guna.UI2.WinForms.Guna2GradientButton BackCateBtn;
     }
 }

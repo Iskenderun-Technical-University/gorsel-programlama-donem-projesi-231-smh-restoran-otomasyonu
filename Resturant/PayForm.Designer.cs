@@ -47,11 +47,13 @@
             this.FinishBtn = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label33 = new System.Windows.Forms.Label();
             this.PriceList = new System.Windows.Forms.ListBox();
             this.DishList = new System.Windows.Forms.ListBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,6 +87,7 @@
             this.button1.Size = new System.Drawing.Size(48, 37);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label9
             // 
@@ -93,9 +96,9 @@
             this.label9.Location = new System.Drawing.Point(331, 403);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 18);
+            this.label9.Size = new System.Drawing.Size(27, 18);
             this.label9.TabIndex = 76;
-            this.label9.Text = "EGP";
+            this.label9.Text = "TL";
             // 
             // label10
             // 
@@ -104,9 +107,9 @@
             this.label10.Location = new System.Drawing.Point(333, 370);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 18);
+            this.label10.Size = new System.Drawing.Size(25, 18);
             this.label10.TabIndex = 75;
-            this.label10.Text = "EGP";
+            this.label10.Text = "TL";
             // 
             // label11
             // 
@@ -115,9 +118,9 @@
             this.label11.Location = new System.Drawing.Point(333, 337);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(40, 18);
+            this.label11.Size = new System.Drawing.Size(25, 18);
             this.label11.TabIndex = 74;
-            this.label11.Text = "EGP";
+            this.label11.Text = "TL";
             // 
             // Total
             // 
@@ -172,7 +175,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 18);
             this.label4.TabIndex = 69;
-            this.label4.Text = "Total Taxes (14%):";
+            this.label4.Text = "Total Taxes (18%):";
             // 
             // label3
             // 
@@ -247,6 +250,7 @@
             this.guna2GradientCircleButton1.Size = new System.Drawing.Size(108, 100);
             this.guna2GradientCircleButton1.TabIndex = 64;
             this.guna2GradientCircleButton1.Text = "Cancel Pay";
+            this.guna2GradientCircleButton1.Click += new System.EventHandler(this.guna2GradientCircleButton1_Click);
             // 
             // guna2VSeparator1
             // 
@@ -255,28 +259,6 @@
             this.guna2VSeparator1.Name = "guna2VSeparator1";
             this.guna2VSeparator1.Size = new System.Drawing.Size(20, 477);
             this.guna2VSeparator1.TabIndex = 63;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(457, 274);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 73);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 62;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(457, 158);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 88);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 61;
-            this.pictureBox1.TabStop = false;
             // 
             // label33
             // 
@@ -314,11 +296,75 @@
             this.DishList.Size = new System.Drawing.Size(296, 189);
             this.DishList.TabIndex = 58;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = global::Resturant.Properties.Resources.kissclipart_stock_clipart_stock_certificate_share_dbb4775f1d0b9c23;
+            this.pictureBox2.Location = new System.Drawing.Point(457, 274);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(75, 73);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 62;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::Resturant.Properties.Resources.kissclipart_eftpos_terminal_icon_clipart_payment_terminal_cred_f468238de18ba077;
+            this.pictureBox1.Location = new System.Drawing.Point(457, 158);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 61;
+            this.pictureBox1.TabStop = false;
+            // 
+            // guna2RadioButton1
+            // 
+            this.guna2RadioButton1.AutoSize = true;
+            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton1.CheckedState.BorderThickness = 0;
+            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2RadioButton1.CheckedState.InnerOffset = -4;
+            this.guna2RadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2RadioButton1.Location = new System.Drawing.Point(571, 189);
+            this.guna2RadioButton1.Name = "guna2RadioButton1";
+            this.guna2RadioButton1.Size = new System.Drawing.Size(128, 29);
+            this.guna2RadioButton1.TabIndex = 78;
+            this.guna2RadioButton1.Text = "Credit Card";
+            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
+            this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // guna2RadioButton2
+            // 
+            this.guna2RadioButton2.AutoSize = true;
+            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton2.CheckedState.BorderThickness = 0;
+            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2RadioButton2.CheckedState.InnerOffset = -4;
+            this.guna2RadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2RadioButton2.Location = new System.Drawing.Point(571, 299);
+            this.guna2RadioButton2.Name = "guna2RadioButton2";
+            this.guna2RadioButton2.Size = new System.Drawing.Size(72, 29);
+            this.guna2RadioButton2.TabIndex = 79;
+            this.guna2RadioButton2.Text = "Cash";
+            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
+            this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
             // PayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 496);
+            this.Controls.Add(this.guna2RadioButton2);
+            this.Controls.Add(this.guna2RadioButton1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
@@ -341,7 +387,9 @@
             this.Controls.Add(this.DishList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PayForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PayForm";
+            this.Load += new System.EventHandler(this.PayForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -374,5 +422,7 @@
         private System.Windows.Forms.Label label33;
         public System.Windows.Forms.ListBox PriceList;
         public System.Windows.Forms.ListBox DishList;
+        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
+        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
     }
 }

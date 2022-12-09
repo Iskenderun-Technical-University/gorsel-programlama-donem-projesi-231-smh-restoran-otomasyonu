@@ -146,6 +146,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\kissclipart-stock-clipart-stock-certificate-share-dbb4775f1d0b9c23.png" />
+    <None Include="Resources\kissclipart-eftpos-terminal-icon-clipart-payment-terminal-cred-f468238de18ba077.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
