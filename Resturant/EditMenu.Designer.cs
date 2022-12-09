@@ -57,12 +57,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.RadioButton6 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.NextBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BackBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2GroupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -110,7 +110,7 @@
             this.FinishButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.FinishButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.FinishButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.FinishButton.FillColor = System.Drawing.Color.DarkGray;
+            this.FinishButton.FillColor = System.Drawing.Color.SteelBlue;
             this.FinishButton.FillColor2 = System.Drawing.Color.Black;
             this.FinishButton.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FinishButton.ForeColor = System.Drawing.Color.White;
@@ -291,9 +291,9 @@
             // 
             this.RadioButton.Animated = true;
             this.RadioButton.Checked = true;
-            this.RadioButton.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.RadioButton.CheckedState.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.RadioButton.CheckedState.BorderThickness = 0;
-            this.RadioButton.CheckedState.FillColor = System.Drawing.Color.Black;
+            this.RadioButton.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
             this.RadioButton.CheckedState.InnerColor = System.Drawing.Color.White;
             this.RadioButton.Location = new System.Drawing.Point(15, 61);
             this.RadioButton.Name = "RadioButton";
@@ -309,9 +309,9 @@
             // RadioButton3
             // 
             this.RadioButton3.Animated = true;
-            this.RadioButton3.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.RadioButton3.CheckedState.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.RadioButton3.CheckedState.BorderThickness = 0;
-            this.RadioButton3.CheckedState.FillColor = System.Drawing.Color.Black;
+            this.RadioButton3.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
             this.RadioButton3.CheckedState.InnerColor = System.Drawing.Color.White;
             this.RadioButton3.Location = new System.Drawing.Point(15, 153);
             this.RadioButton3.Name = "RadioButton3";
@@ -360,9 +360,9 @@
             // RadioButton1
             // 
             this.RadioButton1.Animated = true;
-            this.RadioButton1.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.RadioButton1.CheckedState.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.RadioButton1.CheckedState.BorderThickness = 0;
-            this.RadioButton1.CheckedState.FillColor = System.Drawing.Color.Black;
+            this.RadioButton1.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
             this.RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
             this.RadioButton1.Location = new System.Drawing.Point(15, 92);
             this.RadioButton1.Name = "RadioButton1";
@@ -389,9 +389,9 @@
             // RadioButton2
             // 
             this.RadioButton2.Animated = true;
-            this.RadioButton2.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.RadioButton2.CheckedState.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.RadioButton2.CheckedState.BorderThickness = 0;
-            this.RadioButton2.CheckedState.FillColor = System.Drawing.Color.Black;
+            this.RadioButton2.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
             this.RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
             this.RadioButton2.Location = new System.Drawing.Point(15, 123);
             this.RadioButton2.Name = "RadioButton2";
@@ -407,9 +407,9 @@
             // RadioButton4
             // 
             this.RadioButton4.Animated = true;
-            this.RadioButton4.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.RadioButton4.CheckedState.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.RadioButton4.CheckedState.BorderThickness = 0;
-            this.RadioButton4.CheckedState.FillColor = System.Drawing.Color.Black;
+            this.RadioButton4.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
             this.RadioButton4.CheckedState.InnerColor = System.Drawing.Color.White;
             this.RadioButton4.Location = new System.Drawing.Point(15, 183);
             this.RadioButton4.Name = "RadioButton4";
@@ -436,9 +436,9 @@
             // RadioButton7
             // 
             this.RadioButton7.Animated = true;
-            this.RadioButton7.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.RadioButton7.CheckedState.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.RadioButton7.CheckedState.BorderThickness = 0;
-            this.RadioButton7.CheckedState.FillColor = System.Drawing.Color.Black;
+            this.RadioButton7.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
             this.RadioButton7.CheckedState.InnerColor = System.Drawing.Color.White;
             this.RadioButton7.Location = new System.Drawing.Point(54, 455);
             this.RadioButton7.Name = "RadioButton7";
@@ -477,9 +477,9 @@
             // RadioButton6
             // 
             this.RadioButton6.Animated = true;
-            this.RadioButton6.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.RadioButton6.CheckedState.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.RadioButton6.CheckedState.BorderThickness = 0;
-            this.RadioButton6.CheckedState.FillColor = System.Drawing.Color.Black;
+            this.RadioButton6.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
             this.RadioButton6.CheckedState.InnerColor = System.Drawing.Color.White;
             this.RadioButton6.Location = new System.Drawing.Point(54, 418);
             this.RadioButton6.Name = "RadioButton6";
@@ -492,32 +492,6 @@
             this.RadioButton6.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             this.RadioButton6.Visible = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(929, 37);
-            this.panel1.TabIndex = 61;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImage = global::Resturant.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(886, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(43, 37);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // NextBtn
             // 
             this.NextBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -525,8 +499,8 @@
             this.NextBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.NextBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.NextBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.NextBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.NextBtn.FillColor2 = System.Drawing.Color.White;
+            this.NextBtn.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.NextBtn.FillColor2 = System.Drawing.Color.SteelBlue;
             this.NextBtn.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.NextBtn.ForeColor = System.Drawing.Color.Black;
             this.NextBtn.Location = new System.Drawing.Point(605, 286);
@@ -544,8 +518,8 @@
             this.BackBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.BackBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.BackBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BackBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BackBtn.FillColor2 = System.Drawing.Color.Black;
+            this.BackBtn.FillColor = System.Drawing.Color.Black;
+            this.BackBtn.FillColor2 = System.Drawing.Color.White;
             this.BackBtn.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.BackBtn.ForeColor = System.Drawing.Color.White;
             this.BackBtn.Location = new System.Drawing.Point(445, 286);
@@ -556,12 +530,43 @@
             this.BackBtn.Visible = false;
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ControlBox1);
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.SteelBlue;
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.SystemColors.ControlText;
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.RoyalBlue;
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Black;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(929, 37);
+            this.guna2CustomGradientPanel1.TabIndex = 83;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Animated = true;
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.CustomClick = true;
+            this.guna2ControlBox1.CustomIconSize = 30F;
+            this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(881, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(48, 37);
+            this.guna2ControlBox1.TabIndex = 82;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            // 
             // EditMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(929, 587);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.NextBtn);
             this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.listBox2);
@@ -581,7 +586,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.RadioButton6);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -589,7 +593,7 @@
             this.Load += new System.EventHandler(this.EditMenu_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -625,9 +629,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2CustomRadioButton RadioButton6;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2GradientButton NextBtn;
         private Guna.UI2.WinForms.Guna2GradientButton BackBtn;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

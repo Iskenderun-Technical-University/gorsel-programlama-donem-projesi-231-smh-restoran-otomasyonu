@@ -29,11 +29,6 @@ namespace Resturant
         public static PayForm payForm = new PayForm();
         public static MakeOrderForm orderForm = new MakeOrderForm();
 
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             Login();
@@ -44,9 +39,19 @@ namespace Resturant
             TxtPassword.UseSystemPasswordChar = guna2CustomCheckBox1.Checked;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            TxtPassword.UseSystemPasswordChar = true;
         }
 
         public void Login()

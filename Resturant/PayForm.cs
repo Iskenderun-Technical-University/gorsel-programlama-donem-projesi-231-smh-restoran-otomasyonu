@@ -22,6 +22,7 @@ namespace Resturant
         public static SqlConnection con = new SqlConnection(sqlCon);
         public static SqlDataAdapter da;
         public static DataSet ds;
+        public static float temp;
         private void FinishBtn_Click(object sender, EventArgs e)
         {
             LoginForm.mainForm.Order();
@@ -38,20 +39,10 @@ namespace Resturant
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
 
-        private void PayForm_Load(object sender, EventArgs e)
-        {
-            float temp = (float)(MakeOrderForm.total * 0.14); Total.Text = (temp + MakeOrderForm.total).ToString();
-            TotalTaxlbl.Text = temp.ToString(); TBTaxlbl.Text = MakeOrderForm.total.ToString();
-        }
     }
 }

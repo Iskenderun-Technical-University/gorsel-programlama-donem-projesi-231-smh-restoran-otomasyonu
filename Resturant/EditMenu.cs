@@ -61,12 +61,7 @@ namespace Resturant
                 else listBox1.Items.Add(ds.Tables[0].Rows[i][1].ToString());
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
+        
         private void EditMenu_Load(object sender, EventArgs e)
         {
 
@@ -631,6 +626,12 @@ namespace Resturant
             }
             con.Close();
         }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
         void DeleteCategory(float place, string type)
         {
             da = new SqlDataAdapter("select ID,Place,Price From FoodsMenuTb Where [index]='" + place + "' and Type='" + type + "'", con);

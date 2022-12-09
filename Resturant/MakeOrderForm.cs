@@ -28,12 +28,6 @@ namespace Resturant
         public static SqlDataAdapter da;
         public static DataSet ds;
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-             LoginForm.mainForm.Show();
-        }
-
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -64,7 +58,8 @@ namespace Resturant
                     LoginForm.payForm.DishList.Items.Add(DishList.Items[i]);
                     LoginForm.payForm.PriceList.Items.Add(PriceList.Items[i]);
                 }
-
+                PayForm.temp = (float)(MakeOrderForm.total * 0.14); LoginForm.payForm.Total.Text = (PayForm.temp + MakeOrderForm.total).ToString();
+                LoginForm.payForm.TotalTaxlbl.Text = PayForm.temp.ToString(); LoginForm.payForm.TBTaxlbl.Text = MakeOrderForm.total.ToString();
                 LoginForm.payForm.Show();
             }
         }
@@ -236,6 +231,12 @@ namespace Resturant
                     con.Close();
                 }
             }
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm.mainForm.Show();
         }
 
         void inCate()

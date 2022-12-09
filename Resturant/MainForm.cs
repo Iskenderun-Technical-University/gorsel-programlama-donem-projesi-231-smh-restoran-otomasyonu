@@ -82,16 +82,17 @@ namespace Resturant
             loginForm.Show();
         }
 
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
             if (GroupBox1.Visible == true) GroupBox1.Visible = false;
             else GroupBox1.Visible = true; Createcaptcha();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
         public void Order()
         {
             int OrderNumber = OrdNo + Ordincrement;

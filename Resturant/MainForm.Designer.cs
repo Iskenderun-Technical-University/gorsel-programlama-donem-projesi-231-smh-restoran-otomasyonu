@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.OrderGroup2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.ListOrder2 = new System.Windows.Forms.ListBox();
@@ -71,7 +68,8 @@
             this.EditMenuBtn = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.MakeOrderBtn = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
-            this.panel1.SuspendLayout();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.tabPage2.SuspendLayout();
             this.OrderGroup2.SuspendLayout();
             this.OrderGroup7.SuspendLayout();
@@ -86,6 +84,7 @@
             this.tabPage1.SuspendLayout();
             this.GroupBox1.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
+            this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -94,32 +93,6 @@
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1238, 41);
-            this.panel1.TabIndex = 27;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(1185, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 41);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabPage2
             // 
@@ -144,8 +117,9 @@
             // OrderGroup2
             // 
             this.OrderGroup2.Controls.Add(this.ListOrder2);
+            this.OrderGroup2.CustomBorderColor = System.Drawing.Color.CornflowerBlue;
             this.OrderGroup2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.OrderGroup2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OrderGroup2.ForeColor = System.Drawing.Color.Black;
             this.OrderGroup2.Location = new System.Drawing.Point(245, -2);
             this.OrderGroup2.Name = "OrderGroup2";
             this.OrderGroup2.Size = new System.Drawing.Size(248, 268);
@@ -166,8 +140,9 @@
             // OrderGroup7
             // 
             this.OrderGroup7.Controls.Add(this.ListOrder7);
+            this.OrderGroup7.CustomBorderColor = System.Drawing.Color.CornflowerBlue;
             this.OrderGroup7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.OrderGroup7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OrderGroup7.ForeColor = System.Drawing.Color.Black;
             this.OrderGroup7.Location = new System.Drawing.Point(245, 275);
             this.OrderGroup7.Name = "OrderGroup7";
             this.OrderGroup7.Size = new System.Drawing.Size(248, 268);
@@ -188,8 +163,9 @@
             // OrderGroup6
             // 
             this.OrderGroup6.Controls.Add(this.ListOrder6);
+            this.OrderGroup6.CustomBorderColor = System.Drawing.Color.CornflowerBlue;
             this.OrderGroup6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.OrderGroup6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OrderGroup6.ForeColor = System.Drawing.Color.Black;
             this.OrderGroup6.Location = new System.Drawing.Point(-2, 275);
             this.OrderGroup6.Name = "OrderGroup6";
             this.OrderGroup6.Size = new System.Drawing.Size(248, 268);
@@ -210,8 +186,9 @@
             // OrderGroup1
             // 
             this.OrderGroup1.Controls.Add(this.ListOrder1);
+            this.OrderGroup1.CustomBorderColor = System.Drawing.Color.CornflowerBlue;
             this.OrderGroup1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.OrderGroup1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OrderGroup1.ForeColor = System.Drawing.Color.Black;
             this.OrderGroup1.Location = new System.Drawing.Point(-2, -2);
             this.OrderGroup1.Name = "OrderGroup1";
             this.OrderGroup1.Size = new System.Drawing.Size(248, 268);
@@ -232,8 +209,9 @@
             // OrderGroup10
             // 
             this.OrderGroup10.Controls.Add(this.ListOrder10);
+            this.OrderGroup10.CustomBorderColor = System.Drawing.Color.CornflowerBlue;
             this.OrderGroup10.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.OrderGroup10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OrderGroup10.ForeColor = System.Drawing.Color.Black;
             this.OrderGroup10.Location = new System.Drawing.Point(984, 275);
             this.OrderGroup10.Name = "OrderGroup10";
             this.OrderGroup10.Size = new System.Drawing.Size(248, 268);
@@ -254,8 +232,9 @@
             // OrderGroup5
             // 
             this.OrderGroup5.Controls.Add(this.ListOrder5);
+            this.OrderGroup5.CustomBorderColor = System.Drawing.Color.CornflowerBlue;
             this.OrderGroup5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.OrderGroup5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OrderGroup5.ForeColor = System.Drawing.Color.Black;
             this.OrderGroup5.Location = new System.Drawing.Point(984, -2);
             this.OrderGroup5.Name = "OrderGroup5";
             this.OrderGroup5.Size = new System.Drawing.Size(248, 268);
@@ -276,8 +255,9 @@
             // OrderGroup9
             // 
             this.OrderGroup9.Controls.Add(this.ListOrder9);
+            this.OrderGroup9.CustomBorderColor = System.Drawing.Color.CornflowerBlue;
             this.OrderGroup9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.OrderGroup9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OrderGroup9.ForeColor = System.Drawing.Color.Black;
             this.OrderGroup9.Location = new System.Drawing.Point(738, 275);
             this.OrderGroup9.Name = "OrderGroup9";
             this.OrderGroup9.Size = new System.Drawing.Size(248, 268);
@@ -298,8 +278,9 @@
             // OrderGroup8
             // 
             this.OrderGroup8.Controls.Add(this.ListOrder8);
+            this.OrderGroup8.CustomBorderColor = System.Drawing.Color.CornflowerBlue;
             this.OrderGroup8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.OrderGroup8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OrderGroup8.ForeColor = System.Drawing.Color.Black;
             this.OrderGroup8.Location = new System.Drawing.Point(491, 275);
             this.OrderGroup8.Name = "OrderGroup8";
             this.OrderGroup8.Size = new System.Drawing.Size(248, 268);
@@ -320,8 +301,9 @@
             // OrderGroup4
             // 
             this.OrderGroup4.Controls.Add(this.ListOrder4);
+            this.OrderGroup4.CustomBorderColor = System.Drawing.Color.CornflowerBlue;
             this.OrderGroup4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.OrderGroup4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OrderGroup4.ForeColor = System.Drawing.Color.Black;
             this.OrderGroup4.Location = new System.Drawing.Point(738, -2);
             this.OrderGroup4.Name = "OrderGroup4";
             this.OrderGroup4.Size = new System.Drawing.Size(248, 268);
@@ -342,8 +324,9 @@
             // OrderGroup3
             // 
             this.OrderGroup3.Controls.Add(this.ListOrder3);
+            this.OrderGroup3.CustomBorderColor = System.Drawing.Color.CornflowerBlue;
             this.OrderGroup3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.OrderGroup3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OrderGroup3.ForeColor = System.Drawing.Color.Black;
             this.OrderGroup3.Location = new System.Drawing.Point(491, -2);
             this.OrderGroup3.Name = "OrderGroup3";
             this.OrderGroup3.Size = new System.Drawing.Size(248, 268);
@@ -385,8 +368,8 @@
             this.guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientCircleButton1.FillColor = System.Drawing.Color.Black;
-            this.guna2GradientCircleButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2GradientCircleButton1.FillColor = System.Drawing.Color.SteelBlue;
+            this.guna2GradientCircleButton1.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientCircleButton1.Location = new System.Drawing.Point(1114, 17);
@@ -409,9 +392,10 @@
             this.GroupBox1.Controls.Add(this.label4);
             this.GroupBox1.Controls.Add(this.label3);
             this.GroupBox1.Controls.Add(this.label2);
-            this.GroupBox1.CustomBorderColor = System.Drawing.Color.Gray;
+            this.GroupBox1.CustomBorderColor = System.Drawing.Color.CornflowerBlue;
+            this.GroupBox1.FillColor = System.Drawing.Color.WhiteSmoke;
             this.GroupBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.GroupBox1.ForeColor = System.Drawing.Color.White;
             this.GroupBox1.Location = new System.Drawing.Point(713, 17);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Size = new System.Drawing.Size(395, 249);
@@ -426,8 +410,8 @@
             this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.Gray;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.SteelBlue;
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.Location = new System.Drawing.Point(233, 200);
@@ -589,8 +573,8 @@
             this.OutBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.OutBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.OutBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.OutBtn.FillColor = System.Drawing.Color.Black;
-            this.OutBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OutBtn.FillColor = System.Drawing.Color.SteelBlue;
+            this.OutBtn.FillColor2 = System.Drawing.Color.Black;
             this.OutBtn.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.OutBtn.ForeColor = System.Drawing.Color.White;
             this.OutBtn.Location = new System.Drawing.Point(537, 478);
@@ -608,7 +592,7 @@
             this.EditMenuBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.EditMenuBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.EditMenuBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.EditMenuBtn.FillColor = System.Drawing.Color.DimGray;
+            this.EditMenuBtn.FillColor = System.Drawing.Color.SteelBlue;
             this.EditMenuBtn.FillColor2 = System.Drawing.Color.Black;
             this.EditMenuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.EditMenuBtn.ForeColor = System.Drawing.Color.White;
@@ -629,7 +613,7 @@
             this.MakeOrderBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.MakeOrderBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.MakeOrderBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.MakeOrderBtn.FillColor = System.Drawing.Color.DimGray;
+            this.MakeOrderBtn.FillColor = System.Drawing.Color.SteelBlue;
             this.MakeOrderBtn.FillColor2 = System.Drawing.Color.Black;
             this.MakeOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.MakeOrderBtn.ForeColor = System.Drawing.Color.White;
@@ -661,16 +645,45 @@
             this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.White;
             this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
             this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.Silver;
             this.guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.Black;
+            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.CornflowerBlue;
             this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
             this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.DimGray;
+            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.Black;
             this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(150, 40);
             this.guna2TabControl1.TabIndex = 0;
             this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.White;
             this.guna2TabControl1.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
+            // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ControlBox1);
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.SteelBlue;
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.SystemColors.ControlText;
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.RoyalBlue;
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Black;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1238, 37);
+            this.guna2CustomGradientPanel1.TabIndex = 82;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Animated = true;
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.CustomIconSize = 30F;
+            this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1190, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(48, 37);
+            this.guna2ControlBox1.TabIndex = 82;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // MainForm
             // 
@@ -678,13 +691,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1238, 642);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.guna2TabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
-            this.panel1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.OrderGroup2.ResumeLayout(false);
             this.OrderGroup7.ResumeLayout(false);
@@ -701,14 +713,13 @@
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.guna2TabControl1.ResumeLayout(false);
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
@@ -747,5 +758,7 @@
         private System.Windows.Forms.ListBox ListOrder4;
         private Guna.UI2.WinForms.Guna2GroupBox OrderGroup3;
         private System.Windows.Forms.ListBox ListOrder3;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }
