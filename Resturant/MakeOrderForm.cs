@@ -131,7 +131,7 @@ namespace Resturant
 
         private void DessertBtn_Click(object sender, EventArgs e)
         {
-            Type = "Desserts"; inCate();
+            Type = "Dessert"; inCate();
             da = new SqlDataAdapter("SELECT Data FROM FoodsMenuTb WHERE [index]=0 and Type='" + Type + "'", con);
             ds = new DataSet();
             con.Open();
