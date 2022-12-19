@@ -22,7 +22,7 @@ namespace Resturant
         public static EditMenu editMenu = new EditMenu();
         public static int OrdNo = 1, Ordincrement = 100, sum;
 
-        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mmrkh\Documents\GitHub\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\Database.mdf;Integrated Security=True";
+        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SHADENH\Desktop\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\Database.mdf;Integrated Security=True";
         SqlConnection con = new SqlConnection(Sqlcon);
         private void EditMenuBtn_Click(object sender, EventArgs e)
         {

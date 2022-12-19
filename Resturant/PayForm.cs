@@ -18,8 +18,8 @@ namespace Resturant
         {
             InitializeComponent();
         }
-        public static string sqlCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Resturant Application Version 1.0\Resturant Application\Database.mdf;Integrated Security = True";
-        public static SqlConnection con = new SqlConnection(sqlCon);
+        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SHADENH\Desktop\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\Database.mdf;Integrated Security=True";
+        public static SqlConnection con = new SqlConnection(Sqlcon);
         public static SqlDataAdapter da;
         public static DataSet ds;
         public static float temp;

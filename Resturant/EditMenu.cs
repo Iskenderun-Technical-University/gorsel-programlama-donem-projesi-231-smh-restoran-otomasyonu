@@ -17,7 +17,7 @@ namespace Resturant
     public partial class EditMenu : Form
     {
 
-        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mmrkh\Documents\GitHub\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\Database.mdf;Integrated Security=True";
+        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SHADENH\Desktop\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\Database.mdf;Integrated Security=True";
         SqlConnection con = new SqlConnection(Sqlcon);
         SqlCommand cmd;
         SqlDataAdapter da;
@@ -69,6 +69,7 @@ namespace Resturant
 
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
+            TextBox1.Enabled = true;
             if (ComboBox1.SelectedIndex != -1)
             {
                 label8.Visible = TextBox1.Visible = TextBox2.Visible = label9.Visible = guna2CheckBox2.Visible = guna2CheckBox1.Visible = false;
@@ -81,6 +82,7 @@ namespace Resturant
 
         private void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            TextBox1.Enabled = true;
             if (ComboBox1.SelectedIndex != -1)
             {
                 label8.Visible = TextBox1.Visible = true; label8.Text = "Enter The New Category Name:"; TextBox2.Visible = label9.Visible = guna2CheckBox2.Visible = guna2CheckBox1.Visible = false;
@@ -96,6 +98,7 @@ namespace Resturant
 
         private void RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            TextBox1.Enabled = true;
             if (ComboBox1.SelectedIndex != -1)
             {
                 label8.Text = "Enter A New Name For The Dish:"; label8.Visible = TextBox1.Visible = label5.Visible = label6.Visible = RadioButton6.Visible = RadioButton7.Visible = TextBox2.Enabled = TextBox2.Visible = label9.Visible = true;
@@ -110,6 +113,7 @@ namespace Resturant
 
         private void RadioButton3_CheckedChanged(object sender, EventArgs e)
         {
+            TextBox1.Enabled = true;
             if (RadioButton3.Checked == true)
             {
                 label5.Visible = label6.Visible = RadioButton6.Visible = RadioButton7.Visible = label8.Visible = TextBox1.Visible = TextBox2.Visible = label9.Visible = guna2CheckBox2.Visible = guna2CheckBox1.Visible = false;
@@ -119,6 +123,7 @@ namespace Resturant
 
         private void RadioButton4_CheckedChanged(object sender, EventArgs e)
         {
+            TextBox1.Enabled = true;
             if (RadioButton4.Checked == true)
             {
                 label5.Visible = label6.Visible = RadioButton6.Visible = RadioButton7.Visible = label8.Visible = TextBox1.Visible = TextBox2.Visible = label9.Visible = guna2CheckBox2.Visible = guna2CheckBox1.Visible = false;

@@ -23,7 +23,7 @@ namespace Resturant
         float TempIndex, CurrentPlace;
         int counter = 1;
 
-        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mmrkh\Documents\GitHub\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\Database.mdf;Integrated Security=True";
+        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SHADENH\Desktop\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\Database.mdf;Integrated Security=True";
         public static SqlConnection con = new SqlConnection(Sqlcon);
         public static SqlDataAdapter da;
         public static DataSet ds;

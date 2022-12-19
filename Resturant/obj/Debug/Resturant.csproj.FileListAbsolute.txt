@@ -33,3 +33,6 @@ C:\Users\mmrkh\Documents\GitHub\gorsel-programlama-donem-projesi-231-smh-restora
 C:\Users\mmrkh\Documents\GitHub\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\obj\Debug\Resturant.csproj.CopyComplete
 C:\Users\mmrkh\Documents\GitHub\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\obj\Debug\Resturant.exe
 C:\Users\mmrkh\Documents\GitHub\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\obj\Debug\Resturant.pdb
+C:\Users\SHADENH\Desktop\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\bin\Debug\Database.mdf
+C:\Users\SHADENH\Desktop\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\bin\Debug\Database_log.ldf
+C:\Users\SHADENH\Desktop\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\obj\Debug\Resturant.EditMenu.resources

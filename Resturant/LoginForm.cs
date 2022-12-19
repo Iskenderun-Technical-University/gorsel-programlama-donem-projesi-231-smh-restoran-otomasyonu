@@ -20,8 +20,8 @@ namespace Resturant
         {
             InitializeComponent();
         }
-        public static string sqlCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mmrkh\Documents\GitHub\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\Database.mdf;Integrated Security=True";
-        public static SqlConnection con = new SqlConnection(sqlCon);
+        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SHADENH\Desktop\gorsel-programlama-donem-projesi-231-smh-restoran-otomasyonu\Resturant\Database.mdf;Integrated Security=True";
+        public static SqlConnection con = new SqlConnection(Sqlcon);
         public static SqlDataAdapter da;
         public static DataSet ds;
         public static string userid, userpassword;
@@ -58,8 +58,6 @@ namespace Resturant
         {
             try
             {
-                this.Hide();
-                mainForm.Show();
                 string logintry = "select * from LoginTb Where UserID = '" + TxtUserID.Text + "' And Password ='" +TxtPassword.Text+ "'";
                 SqlDataAdapter sda = new SqlDataAdapter(logintry, con);
                 DataTable dtable = new DataTable();

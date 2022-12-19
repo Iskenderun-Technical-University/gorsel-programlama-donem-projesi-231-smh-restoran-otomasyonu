@@ -146,7 +146,7 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(337, 116);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(346, 134);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(100, 43);
             this.guna2GradientButton1.TabIndex = 40;
