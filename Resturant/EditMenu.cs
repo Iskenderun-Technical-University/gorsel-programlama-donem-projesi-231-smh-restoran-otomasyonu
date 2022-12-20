@@ -31,12 +31,14 @@ namespace Resturant
 
         private void guna2CheckBox2_CheckedChanged(object sender, EventArgs e)
         {
+            //this is used to choose whether you want to change the dish name or not and its made by if statement .
             if (guna2CheckBox2.Checked == true) { TextBox1.Text = Foodlist.Text; TextBox1.Enabled = false; }
             else { TextBox1.Clear(); TextBox1.Enabled = true; }
         }
 
         private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
+            //this is made to choose whether you want to change the dish price or not and its made by if statement .
             if (guna2CheckBox1.Checked == true) { TextBox2.Clear(); TextBox2.Enabled = true;  }
             else { TextBox2.Text = listBox1.Text; TextBox2.Enabled = false; }
         }
@@ -48,6 +50,7 @@ namespace Resturant
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //in this combobox we choose the category and then decide what to do next
             BackBtn.Visible = NextBtn.Visible = FinishButton.Visible = true;
             Foodlist.Items.Clear(); listBox1.Items.Clear(); listBox2.Items.Clear();
             da = new SqlDataAdapter("SELECT Data,Price,ID FROM FoodsMenuTb WHERE [index]=0 and Type='" + ComboBox1.Text + "'", con);
@@ -143,6 +146,7 @@ namespace Resturant
 
         private void NextBtn_Click(object sender, EventArgs e)
         {
+            //we use if statement to then we proceed to veiw the next page.
             if (Foodlist.SelectedIndex != -1)
             {
                 float temp1;
@@ -178,6 +182,7 @@ namespace Resturant
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
+            //in this back buttun its used to go back to the previous page, and we used if statement and for .
             NextBtn.Enabled = true;
             da = new SqlDataAdapter("select Data,Price,ID from FoodsMenuTb where [index] ='" + TempIndex + "' and Type ='" + ComboBox1.Text + "'", con);
             ds = new DataSet();
@@ -212,6 +217,7 @@ namespace Resturant
 
         private void FinishButton_Click(object sender, EventArgs e)
         {
+            //this code was the hardest and the longest .. and its used to basicly remove/add/edit , on the menu list 
             if (RadioButton1.Checked == true && RadioButton7.Checked == true)
             {
                 da = new SqlDataAdapter("select Place From FoodsMenuTb Where [index]='" + 0 + "' and Type='" + ComboBox1.Text + "'", con);

@@ -31,11 +31,13 @@ namespace Resturant
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            // just so you can log in to the project 
             Login();
         }
 
         private void guna2CustomCheckBox1_Click(object sender, EventArgs e)
         {
+            //this is used to hide or show the passowrd of the user .
             TxtPassword.UseSystemPasswordChar = guna2CustomCheckBox1.Checked;
         }
 

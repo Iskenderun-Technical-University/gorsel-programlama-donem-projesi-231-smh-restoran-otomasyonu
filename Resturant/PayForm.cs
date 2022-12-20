@@ -25,6 +25,7 @@ namespace Resturant
         public static float temp;
         private void FinishBtn_Click(object sender, EventArgs e)
         {
+            // once you click it , it will clear the order list for you and transfer them to the pending orders list that its shown in the main form .
             LoginForm.mainForm.Order();
             MakeOrderForm.total = 0;
             DishList.Items.Clear();

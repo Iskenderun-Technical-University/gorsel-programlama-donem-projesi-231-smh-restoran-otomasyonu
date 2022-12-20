@@ -30,13 +30,15 @@ namespace Resturant
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            // it will take you back to the main form .
             this.Hide();
            LoginForm.mainForm.Show();
         }
 
         private void guna2GradientButton5_Click(object sender, EventArgs e)
         {
-             int temp = DishList.SelectedIndex;
+            // this one is used to delete an item from your order list .  
+            int temp = DishList.SelectedIndex;
               if (DishList.SelectedIndex != -1)
               {
                   total -= Convert.ToSingle(PriceList.Items[temp].ToString());
@@ -48,6 +50,7 @@ namespace Resturant
 
         private void EndOrderBtn_Click(object sender, EventArgs e)
         {
+            // once you click it it will transfer you to the pay form and you have to add something before clicking it other wise it will show you an error .
             LoginForm.payForm.DishList.Items.Clear();
             LoginForm.payForm.PriceList.Items.Clear();
             if (DishList.Items.Count == 0) { MessageBox.Show("You Can't Go To Pay Step With Empty List!!, Please Add Something!"); }
@@ -69,6 +72,7 @@ namespace Resturant
 
         private void guna2GradientButton6_Click(object sender, EventArgs e)
         {
+            //this one is used to add an item to your order list so that you can proceed with your oreder .
             try
             {
                 float price; string Order = "";
@@ -113,7 +117,8 @@ namespace Resturant
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
         {
-          FoodBtn.Visible = true; DessertBtn.Visible = true; EntreesBtn.Visible = true; NextBtn.Visible = false; Quantitylbl.Visible = false;
+          //it will take you back to all the category if you have and entered into one . 
+            FoodBtn.Visible = true; DessertBtn.Visible = true; EntreesBtn.Visible = true; NextBtn.Visible = false; Quantitylbl.Visible = false;
             SoupsBtn.Visible = true; DrinksBtn.Visible = true; BackCateBtn.Visible = false; QuantityCounter.Visible = false;
             Foodlist.Visible = false; AddOrderBtn.Visible = false; BackBtn.Visible = false; Foodlist.Items.Clear(); counter = 1;
         }
@@ -185,6 +190,7 @@ namespace Resturant
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
+            // its made so that you can transfer between the categories and dishes .
             NextBtn.Enabled = true;
             da = new SqlDataAdapter("select Data from FoodsMenuTb where [index] ='" + TempIndex + "' and Type ='" + Type + "'", con);
             ds = new DataSet();
@@ -206,6 +212,7 @@ namespace Resturant
 
         private void NextBtn_Click(object sender, EventArgs e)
         {
+            // its made so that you can transfer between the categories and dishes .
             if (Foodlist.SelectedIndex != -1)
             {
                 float temp1;

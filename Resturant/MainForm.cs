@@ -26,11 +26,13 @@ namespace Resturant
         SqlConnection con = new SqlConnection(Sqlcon);
         private void EditMenuBtn_Click(object sender, EventArgs e)
         {
+            //this one will show you the edit menu list . 
             editMenu.Show();
         }
 
         private void MakeOrderBtn_Click(object sender, EventArgs e)
         {
+            //this one is made to transfer you so that you can make your order by hiding it and then showing the oreder form .
             this.Hide();
             LoginForm.orderForm.Show();
         }
@@ -51,6 +53,7 @@ namespace Resturant
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            //this is used to change the user's password and its made by if statement and the captcha . 
             if (Checkcaptcha())
             {
                 if (TextBox2.Text != TextBox3.Text) { MessageBox.Show("The Entering Password Isn't The Same! Please Try Again"); TextBox2.Clear(); TextBox3.Clear(); TextBox4.Clear(); Createcaptcha(); }
@@ -78,6 +81,7 @@ namespace Resturant
 
         private void OutBtn_Click(object sender, EventArgs e)
         {
+            //this is made to sign out and once you click on it , it will take you back to the login form .
             this.Hide();
             loginForm.Show();
         }
@@ -89,6 +93,7 @@ namespace Resturant
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
+            //this one is used to request the change of a password and it will generate the first captcha for the used .
             if (GroupBox1.Visible == true) GroupBox1.Visible = false;
             else GroupBox1.Visible = true; Createcaptcha();
         }
